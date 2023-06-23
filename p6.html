@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html-5</title>
+    <style>
+        dialog{
+            /*display: block;*/
+            background-color: grey;
+            color: white;
+            margin: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h3>Details tag</h3>
+        <p>this tag is used to specifi the additional detail on the web page that the user can view or hide on demond.
+        </p>
+    </center>
+    <hr>
+    <center>
+        <h3>This is summery tag...!</h3>
+        <p>The<b>HTML SUMMERY</b> is used with<b>DETAILS TAG</b>.IT IS used as a summery,caption or legend for the
+            content of a detail element.</p>
+    </center>
+    <hr>
+    <details>
+        <summery>Html</summery>
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur quas iure numquam voluptate cumque nihil
+            sed temporibus sint vel aspernatur earum magni, ratione vitae doloremque eligendi? Fuga, quis perspiciatis?
+        </p>
+    </details>
+    <details>
+        <summery>CSS</summery>
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur quas iure numquam voluptate cumque nihil
+            sed temporibus sint vel aspernatur earum magni, ratione vitae doloremque eligendi? Fuga, quis perspiciatis?
+        </p>
+    </details>
+    <details>
+        <summery>JS</summery>
+        <h1>JS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur quas iure numquam voluptate cumque nihil
+            sed temporibus sint vel aspernatur earum magni, ratione vitae doloremque eligendi? Fuga, quis perspiciatis?
+        </p>
+    </details>
+    <HR>
+    <center>
+        <h3>Time tag...!</h3>
+        <p><b>HTML TIME</b>tag is used to define a date a time.it displYS the time value in a 24 hours clock or precise
+            date in Gorgiean calender in html.</p>
+    </center>
+    <hr>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae qui repellendus debitis ipsam alias
+        voluptatem mollitia, quas quasi quisquam vel, aut inventore eum vitae aspernatur quidem temporibus eligendi est
+        in.2:30 Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos ipsam, illum nisi adipisci
+        optio placeat autem quidem minus iusto voluptates suscipit et neque fugit at voluptatum sunt error? Sit?</p>
+
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae qui repellendus debitis ipsam alias
+        voluptatem mollitia, quas quasi quisquam vel, aut inventore eum vitae aspernatur quidem temporibus eligendi est
+        in.<time>2:30 </time>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos ipsam, illum
+        nisi adipisci optio placeat autem quidem minus iusto voluptates suscipit et neque fugit at voluptatum sunt
+        error? Sit?</p>
+    <hr>
+    <center>
+        <h3>This is the dielog tag...!</h3>
+        <p><b>(this tag to create a new popup dialog on a web page.)</b></p>
+    </center>
+    <hr>
+    <button type="button" id="openDialog">Open dailog</button>
+    <dialog id="dialogID">
+        <button type "button" id="closeDialog">&times;</button>
+        <h1>Fullstack..!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero voluptatum quaerat sint unde quidem?
+            Exercitationem alias cum, accusamus accusantium, sequi voluptatem ipsum dolorum, dolores libero illo
+            voluptatum corrupti vero!</p>
+    </dialog>
+    <script>
+        document.getElementById("openDialog").onclick = function () {
+            document.getElementById("dialogID").show();
+        };
+        document.getElementById("closeDialog").onclick = function () {
+            document.getElementById("dialogID").close();
+        };
+
+    </script>
+
+
+
+</body>
+
+</html>
